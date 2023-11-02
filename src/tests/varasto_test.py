@@ -48,7 +48,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 10)
 
     def test_tulostus(self):
-        self.assertEqual(str(self.varasto), 'saldo = 2, vielä tilaa 10')
+        self.assertEqual(str(self.varasto), 'saldo = 0, vielä tilaa 10')
 
     def test_virheellinen_alku(self):
         toinen_varasto = Varasto(-2,3)
