@@ -59,6 +59,7 @@ class TestVarasto(unittest.TestCase):
         self.assertEqual(str(toinen_varasto), 'saldo = 0.0, vielä tilaa 2.0')
 
     def test_lisaa_varastoon_suurempi(self):
+        
         self.varasto.lisaa_varastoon(100)
         self.assertEqual(str(self.varasto), 'saldo = 10, vielä tilaa 0')
 
